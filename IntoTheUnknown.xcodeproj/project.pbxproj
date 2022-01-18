@@ -14,6 +14,7 @@
 		D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D74020D5278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld */; };
 		D74020D9278FC2B100987CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74020D8278FC2B100987CCA /* Assets.xcassets */; };
 		D74020DC278FC2B100987CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */; };
+		D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B33F427965E2B0005F454 /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D74020D8278FC2B100987CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D74020DB278FC2B100987CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D74020DD278FC2B100987CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76B33F427965E2B0005F454 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D74020CE278FC2B000987CCA /* SceneDelegate.swift */,
 				D74020D0278FC2B000987CCA /* ViewController.swift */,
 				D74020D2278FC2B000987CCA /* Main.storyboard */,
+				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
 				D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */,
 				D74020DD278FC2B100987CCA /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74020D1278FC2B000987CCA /* ViewController.swift in Sources */,
+				D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */,
 				D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */,
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
 				D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */,
