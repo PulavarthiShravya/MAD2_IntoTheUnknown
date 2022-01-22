@@ -8,13 +8,67 @@
 import Foundation
 import UIKit
 
-class WeatherViewController: UIViewController {
 
+class WeatherViewController: UIViewController {
+    
+    @IBOutlet weak var tempLabel: UILabel!
+    
+    @IBOutlet weak var weatherDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var weatherImageView: UIImageView!
+    
+    @IBOutlet weak var highestTempLabel: UILabel!
+    
+    @IBOutlet weak var lowestTempLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //api url
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=Singapore&units=metric&appid=2208cad7b3134f7a764a2d2acde4b635") else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in if let data = data, error == nil {
+                do {
+                    guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] else { return }
+                    guard let weatherDetails = json["weather"] as? [[String: Any]], let weatherMain = json["main"] as? [String: Any] else { return }
+                    let temp = Int(weatherMain["temp"] as? Double ?? 0)
+                    let description = (weatherDetails.first?["description"] as? String)?.capitalizingFirstLetter()
+                    let highestTemp = Int(weatherMain["temp_max"] as? Double ?? 0)
+                    let lowestTemp = Int(weatherMain["temp_min"] as? Double ?? 0)
+                    DispatchQueue.main.async {
+                        self.setWeather(weather: weatherDetails.first?["main"] as? String, description: description, temp: temp, highestTemp: highestTemp, lowestTemp: lowestTemp)
+                    }
+                } catch {
+                print("Unable to retrieve weather")
+                }
+            }
+        }
+        task.resume()
     }
-
-
+    
+    func setWeather(weather: String?, description: String?, temp: Int, highestTemp: Int, lowestTemp: Int) {
+        weatherDescriptionLabel.text = description ?? "..."
+        tempLabel.text = "\(temp)°C"
+        highestTempLabel.text = "\(highestTemp)°C"
+        lowestTempLabel.text = "\(lowestTemp)°C"
+        
+        if weatherDescriptionLabel.text == "Sunny" || weatherDescriptionLabel.text == "Clear Sky" {
+            weatherImageView.image = UIImage(named: "clear")
+        
+        }
+        else if weatherDescriptionLabel.text == "Broken clouds" || weatherDescriptionLabel.text == "Scattered clouds"{
+                
+                weatherImageView.image = UIImage(named: "cloud")
+        }
+        else {
+                weatherImageView.image = UIImage(named: "rain")
+        }
+    }
 }
 
+//function to capitalize first letter
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
+    }
+}
