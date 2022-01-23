@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */; };
 		D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CC278FC2B000987CCA /* AppDelegate.swift */; };
 		D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CE278FC2B000987CCA /* SceneDelegate.swift */; };
 		D74020D1278FC2B000987CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020D0278FC2B000987CCA /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
 		D74020C9278FC2B000987CCA /* IntoTheUnknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntoTheUnknown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74020CC278FC2B000987CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D74020CE278FC2B000987CCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
 				D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */,
+				D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */,
 				D74020DD278FC2B100987CCA /* Info.plist */,
 				D74020D5278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld */,
 			);
@@ -148,6 +151,7 @@
 				D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */,
 				D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */,
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
+				D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */,
 				D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +304,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IntoTheUnknown/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location to view weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IntoTheUnknown/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location to view weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
