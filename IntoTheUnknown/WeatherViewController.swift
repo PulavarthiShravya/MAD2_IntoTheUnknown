@@ -32,7 +32,7 @@ class WeatherViewController: UIViewController {
                     guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] else { return }
                     guard let weatherDetails = json["weather"] as? [[String: Any]], let weatherMain = json["main"] as? [String: Any] else { return }
                     let temp = Int(weatherMain["temp"] as? Double ?? 0)
-                    let description = (weatherDetails.first?["description"] as? String)?.capitalizingFirstLetter()
+                    let description = (weatherDetails.first?["description"] as? String)
                     let highestTemp = Int(weatherMain["temp_max"] as? Double ?? 0)
                     let lowestTemp = Int(weatherMain["temp_min"] as? Double ?? 0)
                     DispatchQueue.main.async {
@@ -63,12 +63,5 @@ class WeatherViewController: UIViewController {
         else {
                 weatherImageView.image = UIImage(named: "rain")
         }
-    }
-}
-
-//function to capitalize first letter
-extension String {
-    func capitalizingFirstLetter() -> String {
-        return prefix(1).uppercased() + self.lowercased().dropFirst()
     }
 }
