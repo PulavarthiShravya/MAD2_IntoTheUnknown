@@ -10,6 +10,9 @@
 		D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */; };
 		D723E21D279E689200298D0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E21C279E689200298D0D /* SearchViewController.swift */; };
 		D723E21F279E786400298D0D /* NorthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E21E279E786400298D0D /* NorthViewController.swift */; };
+		D723E227279E9E4E00298D0D /* NorthParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E226279E9E4E00298D0D /* NorthParks.swift */; };
+		D723E229279E9F9800298D0D /* NorthCoreDataAccessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E228279E9F9800298D0D /* NorthCoreDataAccessLayer.swift */; };
+		D723E22B279EA1B100298D0D /* NorthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E22A279EA1B100298D0D /* NorthTableViewController.swift */; };
 		D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CC278FC2B000987CCA /* AppDelegate.swift */; };
 		D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CE278FC2B000987CCA /* SceneDelegate.swift */; };
 		D74020D1278FC2B000987CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020D0278FC2B000987CCA /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
 		D723E21C279E689200298D0D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D723E21E279E786400298D0D /* NorthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthViewController.swift; sourceTree = "<group>"; };
+		D723E226279E9E4E00298D0D /* NorthParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthParks.swift; sourceTree = "<group>"; };
+		D723E228279E9F9800298D0D /* NorthCoreDataAccessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthCoreDataAccessLayer.swift; sourceTree = "<group>"; };
+		D723E22A279EA1B100298D0D /* NorthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthTableViewController.swift; sourceTree = "<group>"; };
 		D74020C9278FC2B000987CCA /* IntoTheUnknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntoTheUnknown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74020CC278FC2B000987CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D74020CE278FC2B000987CCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 				D74020D0278FC2B000987CCA /* ViewController.swift */,
 				D74020D2278FC2B000987CCA /* Main.storyboard */,
 				D723E21E279E786400298D0D /* NorthViewController.swift */,
+				D723E22A279EA1B100298D0D /* NorthTableViewController.swift */,
+				D723E228279E9F9800298D0D /* NorthCoreDataAccessLayer.swift */,
 				D723E21C279E689200298D0D /* SearchViewController.swift */,
 				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
@@ -78,6 +86,7 @@
 				D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */,
 				D74020DD278FC2B100987CCA /* Info.plist */,
 				D74020D5278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld */,
+				D723E226279E9E4E00298D0D /* NorthParks.swift */,
 			);
 			path = IntoTheUnknown;
 			sourceTree = "<group>";
@@ -156,9 +165,12 @@
 				D74020D1278FC2B000987CCA /* ViewController.swift in Sources */,
 				D723E21D279E689200298D0D /* SearchViewController.swift in Sources */,
 				D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */,
+				D723E22B279EA1B100298D0D /* NorthTableViewController.swift in Sources */,
 				D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */,
+				D723E229279E9F9800298D0D /* NorthCoreDataAccessLayer.swift in Sources */,
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
 				D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */,
+				D723E227279E9E4E00298D0D /* NorthParks.swift in Sources */,
 				D723E21F279E786400298D0D /* NorthViewController.swift in Sources */,
 				D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */,
 			);
