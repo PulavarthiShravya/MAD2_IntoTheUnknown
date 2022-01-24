@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */; };
+		D723E21D279E689200298D0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E21C279E689200298D0D /* SearchViewController.swift */; };
 		D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CC278FC2B000987CCA /* AppDelegate.swift */; };
 		D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CE278FC2B000987CCA /* SceneDelegate.swift */; };
 		D74020D1278FC2B000987CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020D0278FC2B000987CCA /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
+		D723E21C279E689200298D0D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D74020C9278FC2B000987CCA /* IntoTheUnknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntoTheUnknown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74020CC278FC2B000987CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D74020CE278FC2B000987CCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				D74020CE278FC2B000987CCA /* SceneDelegate.swift */,
 				D74020D0278FC2B000987CCA /* ViewController.swift */,
 				D74020D2278FC2B000987CCA /* Main.storyboard */,
+				D723E21C279E689200298D0D /* SearchViewController.swift */,
 				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
 				D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74020D1278FC2B000987CCA /* ViewController.swift in Sources */,
+				D723E21D279E689200298D0D /* SearchViewController.swift in Sources */,
 				D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */,
 				D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */,
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
