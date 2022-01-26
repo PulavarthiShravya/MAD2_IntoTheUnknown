@@ -52,11 +52,11 @@ class WeatherViewController: UIViewController {
         highestTempLabel.text = "\(highestTemp)°C"
         lowestTempLabel.text = "\(lowestTemp)°C"
         
-        if weatherDescriptionLabel.text == "Sunny" || weatherDescriptionLabel.text == "Clear Sky" {
+        if weatherDescriptionLabel.text == "sunny" || weatherDescriptionLabel.text == "clear sky" {
             weatherImageView.image = UIImage(named: "clear")
         
         }
-        else if weatherDescriptionLabel.text == "Broken clouds" || weatherDescriptionLabel.text == "Scattered clouds"{
+        else if weatherDescriptionLabel.text == "broken clouds" || weatherDescriptionLabel.text == "scattered clouds"{
                 
                 weatherImageView.image = UIImage(named: "cloud")
         }

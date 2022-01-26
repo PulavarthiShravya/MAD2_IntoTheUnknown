@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */; };
-		D723E21D279E689200298D0D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E21C279E689200298D0D /* SearchViewController.swift */; };
 		D723E21F279E786400298D0D /* NorthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723E21E279E786400298D0D /* NorthViewController.swift */; };
 		D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CC278FC2B000987CCA /* AppDelegate.swift */; };
 		D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74020CE278FC2B000987CCA /* SceneDelegate.swift */; };
@@ -18,12 +17,17 @@
 		D74020D9278FC2B100987CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74020D8278FC2B100987CCA /* Assets.xcassets */; };
 		D74020DC278FC2B100987CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */; };
 		D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B33F427965E2B0005F454 /* WeatherViewController.swift */; };
+		D7F8353927A1302F00157934 /* SouthParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353827A1302F00157934 /* SouthParks.swift */; };
+		D7F8353B27A1306E00157934 /* SouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353A27A1306E00157934 /* SouthViewController.swift */; };
+		D7F8353D27A13AC500157934 /* EastParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353C27A13AC500157934 /* EastParks.swift */; };
+		D7F8353F27A13AF800157934 /* EastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353E27A13AF800157934 /* EastViewController.swift */; };
+		D7F8354127A13D2300157934 /* WestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354027A13D2300157934 /* WestParks.swift */; };
+		D7F8354327A13D3300157934 /* WestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354227A13D3300157934 /* WestViewController.swift */; };
 		D7FDEC5127A0D85A005A4074 /* NorthParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDEC5027A0D85A005A4074 /* NorthParks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D701F0F3279D5B3000123F44 /* ViewLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLocationViewController.swift; sourceTree = "<group>"; };
-		D723E21C279E689200298D0D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D723E21E279E786400298D0D /* NorthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthViewController.swift; sourceTree = "<group>"; };
 		D74020C9278FC2B000987CCA /* IntoTheUnknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntoTheUnknown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74020CC278FC2B000987CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,12 @@
 		D74020DB278FC2B100987CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D74020DD278FC2B100987CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76B33F427965E2B0005F454 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		D7F8353827A1302F00157934 /* SouthParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthParks.swift; sourceTree = "<group>"; };
+		D7F8353A27A1306E00157934 /* SouthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthViewController.swift; sourceTree = "<group>"; };
+		D7F8353C27A13AC500157934 /* EastParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastParks.swift; sourceTree = "<group>"; };
+		D7F8353E27A13AF800157934 /* EastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastViewController.swift; sourceTree = "<group>"; };
+		D7F8354027A13D2300157934 /* WestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestParks.swift; sourceTree = "<group>"; };
+		D7F8354227A13D3300157934 /* WestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestViewController.swift; sourceTree = "<group>"; };
 		D7FDEC5027A0D85A005A4074 /* NorthParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthParks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,9 +82,14 @@
 				D74020CE278FC2B000987CCA /* SceneDelegate.swift */,
 				D74020D0278FC2B000987CCA /* ViewController.swift */,
 				D74020D2278FC2B000987CCA /* Main.storyboard */,
+				D7F8354027A13D2300157934 /* WestParks.swift */,
+				D7F8354227A13D3300157934 /* WestViewController.swift */,
+				D7F8353C27A13AC500157934 /* EastParks.swift */,
+				D7F8353E27A13AF800157934 /* EastViewController.swift */,
+				D7F8353827A1302F00157934 /* SouthParks.swift */,
+				D7F8353A27A1306E00157934 /* SouthViewController.swift */,
 				D723E21E279E786400298D0D /* NorthViewController.swift */,
 				D7FDEC5027A0D85A005A4074 /* NorthParks.swift */,
-				D723E21C279E689200298D0D /* SearchViewController.swift */,
 				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
 				D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */,
@@ -157,12 +172,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74020D1278FC2B000987CCA /* ViewController.swift in Sources */,
-				D723E21D279E689200298D0D /* SearchViewController.swift in Sources */,
+				D7F8353B27A1306E00157934 /* SouthViewController.swift in Sources */,
 				D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */,
+				D7F8354327A13D3300157934 /* WestViewController.swift in Sources */,
+				D7F8353F27A13AF800157934 /* EastViewController.swift in Sources */,
 				D74020CD278FC2B000987CCA /* AppDelegate.swift in Sources */,
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
+				D7F8353927A1302F00157934 /* SouthParks.swift in Sources */,
 				D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */,
 				D7FDEC5127A0D85A005A4074 /* NorthParks.swift in Sources */,
+				D7F8353D27A13AC500157934 /* EastParks.swift in Sources */,
+				D7F8354127A13D2300157934 /* WestParks.swift in Sources */,
 				D723E21F279E786400298D0D /* NorthViewController.swift in Sources */,
 				D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */,
 			);

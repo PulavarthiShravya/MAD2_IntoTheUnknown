@@ -10,12 +10,10 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var northParks:[NorthParks] =  []
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        northParks = [ NorthParks(parknorth: "Spring Leaf Avenue Playground"),
-                       NorthParks(parknorth: "Pebble Garden")]
         return true
     }
 
