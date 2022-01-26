@@ -8,37 +8,35 @@
 import Foundation
 import UIKit
 
-class NorthViewController: UIViewController {
-    
-    @IBOutlet weak var parkNameLabel: UILabel!
+class NorthViewController: UITableViewController {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
-        //array to store park names
+        super.viewDidLoad()
         
-        //api url
-        guard let url = URL(string: "https://tih-api.stb.gov.sg/national-park/v1?location=1.461502967101%2C103.836845425704&radius=7000&apikey=AuCxF2XWFwNxlSdoWjOYHE71fJqRgi0j")
-        else { return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in if let data = data, error == nil {
-                do {
-                    guard let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] else { return }
-                    guard let parkDetails = json["data"] as? [[String: Any]]else { return }
-                    
-                    for p in parkDetails {
-                        
-                    }
-                    /*let parkName = (parkDetails.first?["name"] as? String)
-                    DispatchQueue.main.async {
-                        self.setPark(parkName: parkName)
-                    }*/
-                } catch {
-                print("Unable to retrieve park")
-                }
-            }
-        }
-        task.resume()
+        self.tableView.reloadData()
     }
     
-    func setPark(parkName: String?) {
-        parkNameLabel.text = parkName
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
     }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //from app delegate
+        return appDelegate.northParks.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "NorthCell", for: indexPath)
+        
+        let northPark = appDelegate.northParks[indexPath.row]
+        cell.textLabel!.text = "\(northPark.parkNorth)"
+        return cell
+    }
+    
 }
+
