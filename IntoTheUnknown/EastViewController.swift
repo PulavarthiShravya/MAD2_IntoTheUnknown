@@ -11,19 +11,7 @@ import UIKit
 
 class EastViewController: UITableViewController {
 
-    var eastParks:[EastParks] =  [EastParks(parkeast: "Jalan Pelatok Open Space"),
-                                  EastParks(parkeast: "Turnhouse Park"),
-                                  EastParks(parkeast: "Pulau Ubin and Chek Jawa"),
-                                  EastParks(parkeast: "Changi East Boardwalk"),
-                                  EastParks(parkeast: "Changi West Boardwalk"),
-                                  EastParks(parkeast: "Changi Beach Park"),
-                                  EastParks(parkeast: "Pasir Ris Park"),
-                                  EastParks(parkeast: "Pasir Ris Town Park"),
-                                  EastParks(parkeast: "Sun Plaza Park"),
-                                  EastParks(parkeast: "Sungei Api Api Park"),
-                                  EastParks(parkeast: "Tampines Eco Green"),
-                                  EastParks(parkeast: "Changi Point Waterfront Park"),
-                                  EastParks(parkeast: "Changi Point Promenade")]
+    var eastParks =  ["Jalan Pelatok Open Space", "Turnhouse Park", "Pulau Ubin and Chek Jawa", "Changi East Boardwalk", "Changi West Boardwalk", "Changi Beach Park", "Pasir Ris Park", "Pasir Ris Town Park", "Sun Plaza Park", "Sungei Api Api Park", "Tampines Eco Green", "Changi Point Waterfront Park", "Changi Point Promenade"]
 
     
     override func viewDidLoad() {
@@ -49,7 +37,7 @@ class EastViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "EastCell", for: indexPath)
         
         let eastPark = eastParks[indexPath.row]
-        cell.textLabel!.text = "\(eastPark.parkEast)"
+        cell.textLabel!.text = "\(eastPark)"
         return cell
     }
     

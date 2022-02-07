@@ -11,15 +11,7 @@ import UIKit
 
 class WestViewController: UITableViewController {
 
-    var westParks:[WestParks] =  [WestParks(parkwest: "Jurong Lake Gardens"),
-                                  WestParks(parkwest: "Sunset Way Park"),
-                                  WestParks(parkwest: "Jurong Central Park"),
-                                  WestParks(parkwest: "Faber Height Open Space"),
-                                  WestParks(parkwest: "Bukit Batok Nature Park"),
-                                  WestParks(parkwest: "Sunset Heights Open Space"),
-                                  WestParks(parkwest: "Yunnan Park"),
-                                  WestParks(parkwest: "Bukit Batok Town Park"),
-                                  WestParks(parkwest: "Jalan Remaja Interim Park")]
+    var westParks =  ["Jurong Lake Gardens", "Sunset Way Park", "Jurong Central Park", "Faber Height Open Space", "Bukit Batok Nature Park", "Sunset Heights Open Space", "Yunnan Park", "Bukit Batok Town Park", "Jalan Remaja Interim Park"]
 
     
     override func viewDidLoad() {
@@ -45,7 +37,7 @@ class WestViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "WestCell", for: indexPath)
         
         let westPark = westParks[indexPath.row]
-        cell.textLabel!.text = "\(westPark.parkWest)"
+        cell.textLabel!.text = "\(westPark)"
         return cell
     }
     

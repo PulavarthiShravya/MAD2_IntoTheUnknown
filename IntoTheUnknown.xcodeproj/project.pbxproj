@@ -19,13 +19,10 @@
 		D76B33F527965E2B0005F454 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76B33F427965E2B0005F454 /* WeatherViewController.swift */; };
 		D7F8353927A1302F00157934 /* SouthParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353827A1302F00157934 /* SouthParks.swift */; };
 		D7F8353B27A1306E00157934 /* SouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353A27A1306E00157934 /* SouthViewController.swift */; };
-		D7F8353D27A13AC500157934 /* EastParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353C27A13AC500157934 /* EastParks.swift */; };
 		D7F8353F27A13AF800157934 /* EastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8353E27A13AF800157934 /* EastViewController.swift */; };
-		D7F8354127A13D2300157934 /* WestParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354027A13D2300157934 /* WestParks.swift */; };
 		D7F8354327A13D3300157934 /* WestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354227A13D3300157934 /* WestViewController.swift */; };
 		D7F8354527A144BE00157934 /* Playgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354427A144BE00157934 /* Playgrounds.swift */; };
 		D7F8354727A144CC00157934 /* PGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8354627A144CC00157934 /* PGViewController.swift */; };
-		D7FDEC5127A0D85A005A4074 /* NorthParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FDEC5027A0D85A005A4074 /* NorthParks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +40,10 @@
 		D76B33F427965E2B0005F454 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		D7F8353827A1302F00157934 /* SouthParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthParks.swift; sourceTree = "<group>"; };
 		D7F8353A27A1306E00157934 /* SouthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthViewController.swift; sourceTree = "<group>"; };
-		D7F8353C27A13AC500157934 /* EastParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastParks.swift; sourceTree = "<group>"; };
 		D7F8353E27A13AF800157934 /* EastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastViewController.swift; sourceTree = "<group>"; };
-		D7F8354027A13D2300157934 /* WestParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestParks.swift; sourceTree = "<group>"; };
 		D7F8354227A13D3300157934 /* WestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestViewController.swift; sourceTree = "<group>"; };
 		D7F8354427A144BE00157934 /* Playgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playgrounds.swift; sourceTree = "<group>"; };
 		D7F8354627A144CC00157934 /* PGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGViewController.swift; sourceTree = "<group>"; };
-		D7FDEC5027A0D85A005A4074 /* NorthParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthParks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +82,11 @@
 				D74020D2278FC2B000987CCA /* Main.storyboard */,
 				D7F8354427A144BE00157934 /* Playgrounds.swift */,
 				D7F8354627A144CC00157934 /* PGViewController.swift */,
-				D7F8354027A13D2300157934 /* WestParks.swift */,
 				D7F8354227A13D3300157934 /* WestViewController.swift */,
-				D7F8353C27A13AC500157934 /* EastParks.swift */,
 				D7F8353E27A13AF800157934 /* EastViewController.swift */,
 				D7F8353827A1302F00157934 /* SouthParks.swift */,
 				D7F8353A27A1306E00157934 /* SouthViewController.swift */,
 				D723E21E279E786400298D0D /* NorthViewController.swift */,
-				D7FDEC5027A0D85A005A4074 /* NorthParks.swift */,
 				D76B33F427965E2B0005F454 /* WeatherViewController.swift */,
 				D74020D8278FC2B100987CCA /* Assets.xcassets */,
 				D74020DA278FC2B100987CCA /* LaunchScreen.storyboard */,
@@ -188,9 +179,6 @@
 				D74020D7278FC2B000987CCA /* IntoTheUnknown.xcdatamodeld in Sources */,
 				D7F8353927A1302F00157934 /* SouthParks.swift in Sources */,
 				D701F0F4279D5B3000123F44 /* ViewLocationViewController.swift in Sources */,
-				D7FDEC5127A0D85A005A4074 /* NorthParks.swift in Sources */,
-				D7F8353D27A13AC500157934 /* EastParks.swift in Sources */,
-				D7F8354127A13D2300157934 /* WestParks.swift in Sources */,
 				D723E21F279E786400298D0D /* NorthViewController.swift in Sources */,
 				D74020CF278FC2B000987CCA /* SceneDelegate.swift in Sources */,
 			);

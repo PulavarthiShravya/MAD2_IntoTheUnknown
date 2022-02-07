@@ -10,22 +10,7 @@ import UIKit
 
 class NorthViewController: UITableViewController {
 
-    var northParks:[NorthParks] =  [NorthParks(parknorth: "Spring Leaf Avenue Playground"),
-                                    NorthParks(parknorth: "Pebble Garden"),
-                                    NorthParks(parknorth: "Sembawang Park"),
-                                    NorthParks(parknorth: "Brooks Park"),
-                                    NorthParks(parknorth: "Kandis Garden"),
-                                    NorthParks(parknorth: "Lower Seletar Reservoir Park"),
-                                    NorthParks(parknorth: "Admiralty Park"),
-                                    NorthParks(parknorth: "Yishun Pond Park"),
-                                    NorthParks(parknorth: "Yishun Park"),
-                                    NorthParks(parknorth: "Woodlands Town Park East"),
-                                    NorthParks(parknorth: "Woodlands Waterfront Park"),
-                                    NorthParks(parknorth: "Jalan Kemuning Park"),
-                                    NorthParks(parknorth: "Springside Park"),
-                                    NorthParks(parknorth: "Janggus Garden"),
-                                    NorthParks(parknorth: "Yishun Neighbourhood Park"),
-                                    NorthParks(parknorth: "Sembawang Hot Spring Park")]
+    var northParks =  ["Spring Leaf Avenue Playground", "Pebble Garden", "Sembawang Park", "Brooks Park", "Kandis Garden", "Lower Seletar Reservoir Park", "Admiralty Park", "Yishun Pond Park", "Yishun Park", "Woodlands Town Park East", "Woodlands Waterfront Park", "Jalan Kemuning Park", "Springside Park", "Janggus Garden", "Yishun Neighbourhood Park", "Sembawang Hot Spring Park"]
 
     
     override func viewDidLoad() {
@@ -51,7 +36,7 @@ class NorthViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "NorthCell", for: indexPath)
         
         let northPark = northParks[indexPath.row]
-        cell.textLabel!.text = "\(northPark.parkNorth)"
+        cell.textLabel!.text = "\(northPark)"
         return cell
     }
     
